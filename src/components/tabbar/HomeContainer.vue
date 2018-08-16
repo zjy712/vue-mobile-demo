@@ -55,7 +55,7 @@ export default {
     getLunbotu() {
       this.$http
         .get(
-          "https://267664bd-b65a-4dae-869f-51f956e659ec.mock.pstmn.io/lunbotu"
+          "https://346e7c74-540e-40c2-9eb5-b98b34bde0a0.mock.pstmn.io/lunbotu"
         )
         .then(result => {
           if (result.body.staus === "0") {

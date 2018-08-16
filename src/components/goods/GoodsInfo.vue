@@ -78,7 +78,7 @@ export default {
     },
     methods: {
         getLunbotu() {
-            this.$http.get("https://267664bd-b65a-4dae-869f-51f956e659ec.mock.pstmn.io/thumuimages/"+this.id)
+            this.$http.get("https://346e7c74-540e-40c2-9eb5-b98b34bde0a0.mock.pstmn.io/goodsinfo/"+this.id)
             .then(res => {
                 if (res.body.status === 0) {
                     res.body.message.forEach(item => {
@@ -93,7 +93,7 @@ export default {
                 })
         },
         getGoodsInfo() {
-            this.$http.get("https://267664bd-b65a-4dae-869f-51f956e659ec.mock.pstmn.io//goods/getinfo/"+this.id)
+            this.$http.get("https://346e7c74-540e-40c2-9eb5-b98b34bde0a0.mock.pstmn.io/getgoods/"+this.id)
                 .then(res => {
                     if (res.body.status === 0) {
                         this.goodsInfo = res.body.message;
